@@ -33,17 +33,4 @@ public class UserServiceImpl implements UserService {
 	}
 
 
-	@Override
-	@Transactional(propagation = Propagation.REQUIRED)
-	public Optional<UserForm> update(UserForm employee) {
-		Optional<User> existingEmployee = userRepository.findById(20);
-
-		if (!existingEmployee.isPresent()) {
-			return Optional.empty();
-		} else {
-			existingEmployee.get().setEmail("wtf");
-		}
-
-		return null;
-	}
 }
