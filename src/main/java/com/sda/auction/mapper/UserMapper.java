@@ -15,4 +15,11 @@ public class UserMapper {
 		user.setPassword(userForm.getPassword());
 		return user;
 	}
+
+	public UserForm map(User user){
+		UserForm userForm = new UserForm();
+		userForm.setEmail(user.getEmail());
+		//...
+		return userForm;
+	}
 }

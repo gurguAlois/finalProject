@@ -19,17 +19,21 @@
     <form:form method="POST" action="registration" modelAttribute="userForm">
         <form:input path="firstName" id="firstName" type="text" class="normalInput"
                     placeholder="First name"/>
+        <p class="error"><form:errors path="firstName"/></p>
         <form:input path="lastName" id="lastName" type="text" class="normalInput"
                     placeholder="Last name"/>
-        <form:input path="email" id="email" type="email" class="normalInput" placeholder="Email"/>
+        <p class="error"><form:errors path="lastName"/></p>
+        <form:input path="email" id="email" type="text" class="normalInput" placeholder="Email"/>
+        <p class="error"><form:errors path="email"/></p>
         <form:input path="password" id="password" type="password" class="normalInput"
                     placeholder="Password"/>
-        <%--        <p class="error">Password too short!</p>--%>
+        <p class="error"><form:errors path="password"/></p>
         <form:input path="confirmPassword" id="confirmPassword" type="password" class="normalInput"
                     placeholder="Confirm password"/>
-        <%--        <p class="error">Passwords do not match!</p>--%>
+        <p class="error"><form:errors path="confirmPassword"/></p>
         <button>Register</button>
 
+        <h2>${successMessage}</h2>
         <ul class="registerFooter">
             <li><a href="login">Log in</a></li>
             <li><a href="#">Forgot Password</a></li>

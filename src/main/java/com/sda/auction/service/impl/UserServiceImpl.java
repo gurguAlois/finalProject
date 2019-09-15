@@ -5,8 +5,11 @@ import com.sda.auction.mapper.UserMapper;
 import com.sda.auction.model.User;
 import com.sda.auction.repository.UserRepository;
 import com.sda.auction.service.UserService;
+import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 public class UserServiceImpl implements UserService {
@@ -27,5 +30,20 @@ public class UserServiceImpl implements UserService {
 		User user = userMapper.map(userForm);
 
 		userRepository.save(user);
+	}
+
+
+	@Override
+	@Transactional(propagation = Propagation.REQUIRED)
+	public Optional<UserForm> update(UserForm employee) {
+		Optional<User> existingEmployee = userRepository.findById(20);
+
+		if (!existingEmployee.isPresent()) {
+			return Optional.empty();
+		} else {
+			existingEmployee.get().setEmail("wtf");
+		}
+
+		return null;
 	}
 }
