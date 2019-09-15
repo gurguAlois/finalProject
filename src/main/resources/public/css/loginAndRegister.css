@@ -27,7 +27,9 @@ body {
   margin-top: 10px;
   width: 220px;
 }
-
+.normalInput.error{
+  border: 1px solid red;
+}
 .registerArea button{
   margin: 0 auto;
   width: 234px;
@@ -48,4 +50,10 @@ body {
 .registerFooter > li > a{
   color: lightgray;
   text-decoration: none;
+}
+p.error {
+  color: red;
+  width: 220px;
+  padding-top: 5px;
+  margin: 0 auto;
 }
