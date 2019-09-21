@@ -11,7 +11,7 @@ import org.hibernate.validator.constraints.Length;
 @ConfirmPasswordConstraint(message = "Confirm password doesn't match!")
 public class UserForm {
 
-	@NotEmpty(message = "First name should not be empty")
+	@NotEmpty(message = "{error.user.first.name.empty}")
 	private String firstName;
 
 	@NotEmpty(message = "Last name should not be empty")
