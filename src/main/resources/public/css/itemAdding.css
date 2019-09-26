@@ -16,7 +16,7 @@ body {
   background-color: white;
   margin: 0 auto;
   width: 300px;
-}
+  }
 
 .normalInput{
   color: grey;
@@ -64,3 +64,24 @@ p.error {
     font-size: 23px;
     color: #5ec113;
 }
+.buttonContainer {
+    height:70px;
+}
+#homeButton {
+    width: 140px;
+    box-sizing: content-box;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 7px;
+    background-color: #dc1357;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    opacity: 0.7;
+}
+
+#homeButton:hover{
+    background-color:green;
+    opacity: 1;
+
+}
+

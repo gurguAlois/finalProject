@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="addingItemArea">
-    <h2>Register</h2>
+    <h2>Add Item</h2>
     <form:form method="POST" action="newItem" modelAttribute="itemForm">
         <form:input path="name" id="itemName" type="text" class="normalInput"
                     placeholder="name"/>
@@ -34,11 +34,12 @@
         <button>ADD ITEM</button>
 
         <h2 class ="successMessage">${successMessage}</h2>
-        <ul class="addingFooter">
-            <li><a href="Go To Home Page">Log in</a></li>
-        </ul>
-
-    </form:form>
+     </form:form>
+     <div class="buttonContainer">
+        <form:form method="get" action="home">
+            <button id="homeButton" type="Submit">Go To Home Page</button>
+        </form:form>
+     <div>
 </div>
 </body>
 </html>
