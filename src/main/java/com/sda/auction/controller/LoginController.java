@@ -48,9 +48,7 @@ public class LoginController {
 		} else {
 			User existingUser = userService.findByEmail(userForm.getEmail());
 			if (existingUser != null) {
-				//eroare
-				bindingResult.rejectValue("email", "error.user",
-						"There is already a user registered with this email");
+
 			} else {
 				userService.saveUser(userForm);
 				modelAndView.addObject(new UserForm());

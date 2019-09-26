@@ -33,7 +33,7 @@
         <p class="error"><form:errors path="endDate"/></p>
         <button>ADD ITEM</button>
 
-        <h2>${successMessage}</h2>
+        <h2 class ="successMessage">${successMessage}</h2>
         <ul class="addingFooter">
             <li><a href="Go To Home Page">Log in</a></li>
         </ul>

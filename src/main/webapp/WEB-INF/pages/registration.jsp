@@ -33,7 +33,7 @@
         <p class="error"><form:errors path="confirmPassword"/></p>
         <button>Register</button>
 
-        <h2>${successMessage}</h2>
+        <h2 class="successMessage">${successMessage}</h2>
         <ul class="registerFooter">
             <li><a href="login">Log in</a></li>
             <li><a href="#">Forgot Password</a></li>

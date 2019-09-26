@@ -19,7 +19,7 @@ public class UserMapper {
 	public UserForm map(User user){
 		UserForm userForm = new UserForm();
 		userForm.setEmail(user.getEmail());
-		//...
+
 		return userForm;
 	}
 }

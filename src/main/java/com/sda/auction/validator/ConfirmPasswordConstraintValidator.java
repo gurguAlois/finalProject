@@ -4,9 +4,7 @@ import com.sda.auction.dto.UserForm;
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
-public class ConfirmPasswordConstraintValidator
-		implements
-		ConstraintValidator<ConfirmPasswordConstraint, Object> {
+public class ConfirmPasswordConstraintValidator implements ConstraintValidator<ConfirmPasswordConstraint, Object> {
 
 	@Override
 	public void initialize(ConfirmPasswordConstraint constraintAnnotation) {

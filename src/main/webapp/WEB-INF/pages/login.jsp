@@ -23,9 +23,9 @@
         <br/>
 
         <input type="text" id="email"placeholder="Email" name="email"
-               class="form-control"/> <br/>
+               class="form-control" value="gurgualois@yahoo.com"/> <br/>
         <input type="password" placeholder="Password" name="password"
-               id="password" class="form-control"/> <br/>
+               id="password" class="form-control" value="12345"/> <br/>
 
         <div align="center">
             <c:if test="${param.error}">

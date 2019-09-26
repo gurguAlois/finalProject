@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-  // $("p.error > span").parent().prev().css({ "border": "1px solid red" });
+  //$("p.error > span").parent().prev().css({ "border": "1px solid red" });
 
   $("p.error > span").parent().prev().addClass("error");
 

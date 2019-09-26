@@ -1,8 +1,6 @@
 package com.sda.auction.controller;
 
 import com.sda.auction.dto.ItemForm;
-import com.sda.auction.dto.UserForm;
-import com.sda.auction.model.User;
 import com.sda.auction.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.naming.Binding;
 import javax.validation.Valid;
 
 @Controller
@@ -43,7 +40,7 @@ public class AdminController {
 		ModelAndView modelAndView = new ModelAndView();
 		System.out.println(itemForm + "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
 		if (bindingResult.hasErrors()) {
-			System.out.println("eroare");
+
 		} else {
 			System.out.println("ok");
 			itemService.saveItem(itemForm);
